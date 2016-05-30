@@ -61,11 +61,21 @@ Generator.prototype.displayFieldButtons = function(){
         tempFieldButton.text(this.availableFields[f]);
 
         tempFieldButton.on('click', function(e){
-            var fieldName = e.target.attributes.field.value
-            $("#userTemplate").val( $("#userTemplate").val() + fieldName);
-            console.log(fieldName);
-        });
 
+            var fieldName = e.target.attributes.field.value
+            var currentTaValue = $("#userTemplate").val();
+
+            // if the cursor is at the end of the text area. also works when empty
+            if($("#userTemplate").caret() == currentTaValue.length){
+                $("#userTemplate").val(currentTaValue + fieldName);
+            }
+            // the cursor is somewhere in the text area
+            else{
+                var firstPart = currentTaValue.substring(0, $("#userTemplate").caret());
+                var secondPart = currentTaValue.substring($("#userTemplate").caret(), currentTaValue.length);
+                $("#userTemplate").val(firstPart + fieldName + secondPart);
+            }
+        });
 
         $(tempFieldButton).appendTo("#allFields");
     }
