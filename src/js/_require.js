@@ -1,0 +1,10 @@
+var fs = require('fs');
+var path = require('path');
+const shell = require('electron').shell;
+$ = jQuery = require("jquery");
+const {dialog} = require('electron').remote;
+var piexif = require("piexifjs");
+var EventEmitter = require("events").EventEmitter;
+var handlebars = require('handlebars');
+var version = require('../package.json').version;
+//var drag = require('electron-drag');

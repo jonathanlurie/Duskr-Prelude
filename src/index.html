@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <title>Hello World!</title>
+</head>
+
+
+
+<body>
+
+    <div id="header">
+        <img id="preludeLogo" src='images/preludew.png' height="50">
+    </div>
+
+    <div id="infoForm">
+
+        <input id="urlPrefix" type="text" placeholder="URL prefix" onfocus="this.placeholder = ''" onblur="this.placeholder = 'URL prefix'">
+        <div id="allFields"><span class="button darkButton">Available fields</span></div>
+        <textarea id='userTemplate' rows="10" ></textarea>
+
+    </div>
+
+    <div id='controlPanel'>
+        <span class='button greenBackground' id="openImages" onclick="appController.fileIO.openImgDialog();">
+            Open images
+        </span>
+
+        <span class='button orangeBackground' id="openImages" onclick="appController.flushImages();">
+            Flush
+        </span>
+
+        <span class='button greenBackground' id="generate" onclick="appController.generateImageInfo();">
+            Generate image info
+        </span>
+
+        <span id="imageLoadedInfo">0 image loaded</span>
+    </div>
+
+    <textarea id='output'>
+
+        Instructions:
+            - Write a URL prefix if necessary
+            - Customize the template using the clickable "available fields"
+            - Open image files (jpeg only)
+            - Generate
+            - Copy/paste to your website or document!
+
+        Note: the default template follows Markdown specifications,
+              but you can do otherwise (text, HTML, etc.).
+
+        More info about template language at handlebarsjs.com
+    </textarea>
+
+    <div id='footer'>
+        <img src='images/duskr-logo.png' height="30" onclick='shell.openExternal("http://duskr.co")' style="cursor: pointer;">
+        <span id="version"></span>
+    </div>
+
+
+    <script type="text/javascript" src="js/_require.js"></script>
+    <script type="text/javascript" src="js/FileIO.js"></script>
+    <script type="text/javascript" src="js/AppController.js"></script>
+    <script type="text/javascript" src="js/ImageData.js"></script>
+    <script type="text/javascript" src="js/Generator.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+
+</body>
+
+
+</html>
