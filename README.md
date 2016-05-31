@@ -2,21 +2,23 @@
 
 *Prelude* is a app developed with Electron for batch generating image descriptions. The first motivation behind *Prelude* is to quickly create blog articles with some EXIF data as description, and with a lot of pictures.
 
+**[[Download the binaries for MacOSX]](https://github.com/jonathanlurie/Duskr-Prelude/releases/download/v0.1.0/Duskr-Prelude_OSX.zip)**  
+
 Before going further, it looks like that:  
 ![](snap.png)
 
 ## Installation and build
 You have the choice to run it simply:  
 ```shell
-$ npm Install
+$ npm install
 $ npm start
 ```
 
-**For MacOSX only** Or you can build it as an independent application (Mac app file). For that you will need *Electron Packager* installed globally:
+**[For MacOSX only]** Or you can build it as an independent application (Mac app file). For that you will need *Electron Packager* installed globally:
 
 ```shell
 $ sudo npm install electron-packager -g
-$ npm Install
+$ npm install
 $ ./build.sh
 ```
 
