@@ -1,6 +1,6 @@
-electron-packager . "Duskr-Prelude" \
+electron-packager . "Duskr Prelude" \
     –version-string.CompanyName="Duskr" \
-    –version-string.ProductName="Duskr-Prelude" \
+    –version-string.ProductName="Prelude" \
     –version-string.ProductVersion="0.1.0" \
     --icon="icon.icns" \
     --platform=darwin \
