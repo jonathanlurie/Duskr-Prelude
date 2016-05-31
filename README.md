@@ -5,7 +5,24 @@
 Before going further, it looks like that:  
 ![](snap.png)
 
+## Installation and build
+You have the choice to run it simply:  
+```shell
+$ npm Install
+$ npm start
+```
 
+**For MacOSX only** Or you can build it as an independent application (Mac app file). For that you will need *Electron Packager* installed globally:
+
+```shell
+$ sudo npm install electron-packager -g
+$ npm Install
+$ ./build.sh
+```
+
+The `build.sh` script will create a `Duskr-Prelude.app` in the folder `build` that you can move to your **Application** folder.
+
+Note for Windows users: the procedure is really similar on Windows, just replace the `build.sh` by a `build.bat` and adapt the syntax for line breaks.
 
 ## The template
 
