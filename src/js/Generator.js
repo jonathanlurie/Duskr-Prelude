@@ -1,7 +1,7 @@
 var Generator = function(){
     this.defaultTemplate =
-`**{{cameraModel}}**{{#if lensModel}} & **{{lensModel}}**{{/if}}{{#if focalLength35}} at **{{focalLength35}}mm**,{{/if}}{{#if speed}} a speed of **{{speed}}sec**,{{/if}}{{#if Fnumber}} an aperture of **f/{{Fnumber}}**{{/if}}{{#if iso}} and **ISO{{iso}}**{{/if}}.{{#if gpsLat}} [See on a map](http://maps.google.com/?q={{gpsLat}},{{gpsLon}}){{/if}}  
-![]({{urlPrefix}}/{{basename}})
+`**{{cameraModel}}**{{#if lensModel}} & **{{lensModel}}**{{/if}}{{#if focalLength35}} at **{{focalLength35}}mm**,{{/if}}{{#if speed}} **{{speed}}sec**,{{/if}}{{#if Fnumber}} **f/{{Fnumber}}**{{/if}}{{#if iso}} and **ISO{{iso}}**{{/if}}.{{#if gpsLat}} [map &#10132;](http://maps.google.com/?q={{gpsLat}},{{gpsLon}}){{/if}}
+![]({{urlPrefix}}/{{basename}})  
 
 `
 
