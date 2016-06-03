@@ -89,3 +89,11 @@ And this is the output, really interpreted as *Markdown*:
 
 **NIKON D800** & **16.0-35.0 mm f/4.0** at **35mm**, a speed of **1/800sec**, an aperture of **f/5** and **ISO200**.  
 ![](https://s3-us-west-2.amazonaws.com/jonathanlurie-photo/2016/May/torontoDay1-3.jpg)
+
+## TODO
+- Put the templates in an external file (still internal to the app)
+- Create several default templates and give the possibility to chose with a dropdown menu
+- Add the possibility for the user to save his own templates, maybe using [Electron-json-storage](https://github.com/jviotti/electron-json-storage)
+
+## License
+MIT
